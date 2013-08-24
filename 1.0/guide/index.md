@@ -5,7 +5,7 @@
 * demo：[http://gallery.kissyui.com/ringNavi/1.0/demo/index.html](http://gallery.kissyui.com/ringNavi/1.0/demo/index.html)
 
 ## 组件概览
-![RingNavi](http://)
+![RingNavi](http://www.seejs.com/wp-content/uploads/2013/08/ringnavi.png)
 
 ## 参数说明
 
