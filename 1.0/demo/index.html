@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>KISSY环状导航组件</title>
+	<link rel="stylesheet" href="index.css" />
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy-min.js" charset="utf-8"></script>
+</head>
+<body>
+<h2>KISSY环状导航组件</h2>
+<div class="icon-wrench J_RingNavi">
+	<ul class="navlist">
+		<li class="navitem" data-icon="&#xe000;"></li>
+		<li class="navitem" data-icon="&#xe001;"></li>
+		<li class="navitem" data-icon="&#xe002;"></li>
+		<li class="navitem" data-icon="&#xe003;"></li>
+		<li class="navitem" data-icon="&#xe004;"></li>
+	</ul>
+</div>
+<div class="icon-wrench J_RingNavi J_RingNavi1">
+	<ul class="navlist">
+		<li class="navitem" data-icon="&#xe000;"></li>
+		<li class="navitem" data-icon="&#xe001;"></li>
+		<li class="navitem" data-icon="&#xe002;"></li>
+		<li class="navitem" data-icon="&#xe003;"></li>
+		<li class="navitem" data-icon="&#xe004;"></li>
+	</ul>
+</div>
+<div class="icon-wrench J_RingNavi J_RingNavi2">
+	<ul class="navlist">
+		<li class="navitem" data-icon="&#xe000;"></li>
+		<li class="navitem" data-icon="&#xe001;"></li>
+		<li class="navitem" data-icon="&#xe002;"></li>
+		<li class="navitem" data-icon="&#xe003;"></li>
+		<li class="navitem" data-icon="&#xe004;"></li>
+	</ul>
+</div>
+<script>
+    var S = KISSY;
+	S.Config.debug = true;
+    if (S.Config.debug) {
+        var srcPath = "../../../";
+        S.config({
+            packages:[
+                {
+                    name:"gallery",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/ringNavi/1.0/index', function (S, RingNavi) {
+		var ringNavi = new RingNavi({
+			trigger: ".J_RingNavi",
+			displayArea: {
+				from: 180,
+				to: 270
+			},
+			expanded: true,
+			expandWay: "stepByStep",
+			delay: 200,
+			toggle: true,
+			radius: 150
+		});
+		var ringNavi1 = new RingNavi({
+			trigger: ".J_RingNavi1",
+			displayArea: {
+				from: 0,
+				to: 90
+			},
+			speed: 0.5,
+			easing: "bounceOut",
+			expanded: true,
+			expandWay: "stepByStep",
+			toggle: true,
+			radius: 200
+		});
+		var ringNavi2 = new RingNavi({
+			trigger: ".J_RingNavi2",
+			displayArea: {
+				from: 0,
+				to: 180
+			},
+			speed: 0.5,
+			easing: "easeOutStrong",
+			expanded: true,
+			expandWay: "",
+			toggle: true,
+			radius: 100
+		});
+    })
+</script>
+</body>
+</html>

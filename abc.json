@@ -1,0 +1,13 @@
+{
+    "name": "ringNavi",
+    "version": "1.0",
+    "desc": "移动设备上常见的环状导航组件",
+    "cover": "",
+    "author": {
+        "name": "Letao",
+        "email": "mailzwj@126.com",
+        "page": "http://www.seejs.com"
+    },
+    "type": "kissy-pie",
+    "type-url": "http://abc.alibaba-inc.com/r/kissy-pie"
+}
